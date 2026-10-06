@@ -80,3 +80,7 @@ Copy the `EasyLiquid` directory to your Cinema 4D plugins directory when install
 ## Feedback
 
 Report problems through Issues. Include your Cinema 4D version, the selected primitive, animation mode, reproduction steps, and any Python console error.
+
+## License
+
+EasyLiquid is licensed under the [MIT License](LICENSE).
