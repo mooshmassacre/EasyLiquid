@@ -57,6 +57,16 @@ Responds to keyframed Position animation on the original container or its parent
 
 Both modes support **Keep Surface Level (World)** to compensate for container rotation while preserving the waves. They deform a fake liquid mesh; they do not simulate physical fluid or spills.
 
+### Example
+
+<p align="center">
+  <a href="docs/EasyLiquid.mp4">
+    <img src="docs/example.gif" alt="EasyLiquid animated surface example" width="600">
+  </a>
+</p>
+
+An animated example of EasyLiquid surface deformation. [Watch the original video](docs/EasyLiquid.mp4).
+
 ## v1.3 changes
 
 English panel, User Data, mode names, messages, and help. Four separated sections, 12 px outer margins, compact 20 px icons, moderate row spacing, and paired settings buttons. Surface options share one row. Numeric inputs use a fixed 54 px width; sliders expand independently. Animation behavior is unchanged.
