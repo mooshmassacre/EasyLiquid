@@ -2,9 +2,11 @@
 
 Procedural fake liquid for Cinema 4D. Supports parametric cylinders and cubes.
 
-![Proposed compact panel layout](docs/layout-preview.png)
+![EasyLiquid v1.3 interface in Cinema 4D](docs/interface.png)
 
-*Illustrative layout preview, not an in-app screenshot.*
+Select your object, choose a mode, and create the liquid. Adjust the settings in one compact panel.
+
+*EasyLiquid v1.3 running in Cinema 4D.*
 
 ## Install or update
 
