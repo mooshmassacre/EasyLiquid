@@ -26,6 +26,37 @@ Keep Surface Level in World Space compensates for container rotation while prese
 
 For existing scenes, select the liquid and click Create / Update Liquid to update its tag and translate its User Data. Values are retained. Save a copy of important scenes before updating.
 
+## Animation modes
+
+### <img src="EasyLiquid/res/hud/active/waves_64.png" alt="Continuous Waves icon" width="24" height="24"> Continuous Waves
+
+Creates a repeating wave animation driven by the timeline. The surface keeps moving even when the container stays still. Use this mode for a gently moving drink, a looping shot, or a stylized liquid surface that needs an ongoing rhythm.
+
+- **Amplitude** controls the wave height.
+- **Speed** controls how quickly the waves cycle.
+- **Wavelength** controls the distance between wave peaks: longer waves make broader curves.
+- **Direction** controls the wave orientation.
+- **Secondary Ripples** adds smaller variations to the main wave.
+- **Edge Lock** reduces deformation around the surface boundary.
+
+**Quick start:** select a cylinder or cube, choose **Continuous Waves**, click **Create / Update Liquid**, and play the timeline. Adjust Amplitude and Speed, then click **Apply Changes**. Position keyframes are optional for this mode.
+
+### <img src="EasyLiquid/res/hud/active/reactive_64.png" alt="Motion Response icon" width="24" height="24"> Motion Response (responsive liquid)
+
+Responds to keyframed Position animation on the original container or its parent hierarchy. During movement, the liquid leans toward one side. As the container slows down or stops, the surface redistributes into waves that gradually settle. Use this mode for a cup sliding across a table, a moving product shot, or an animated container that should make its contents react.
+
+- **Motion Strength** adjusts the overall response to movement.
+- **Moving Tilt** sets the amount of surface inclination during movement.
+- **Wave Rhythm** adjusts the pace of the settling oscillations.
+- **Settling Time** controls how long the liquid takes to calm down.
+- **Ripples** controls the smaller waves on the surface.
+- **Wave Transition** controls how smoothly the moving tilt blends into the settling waves.
+- **Transition Lead** brings that transition forward, useful when Position keyframes ease into a stop.
+
+**Quick start:** choose **Motion Response**, click **Create / Update Liquid**, and animate the original cylinder, cube, or its parent Null with Position keyframes. Play through the movement and leave some time after the stop for the waves to settle. Adjust Moving Tilt and Settling Time, then click **Apply Changes**.
+
+Both modes support **Keep Surface Level (World)** to compensate for container rotation while preserving the waves. They deform a fake liquid mesh; they do not simulate physical fluid or spills.
+
 ## v1.3 changes
 
 English panel, User Data, mode names, messages, and help. Four separated sections, 12 px outer margins, compact 20 px icons, moderate row spacing, and paired settings buttons. Surface options share one row. Numeric inputs use a fixed 54 px width; sliders expand independently. Animation behavior is unchanged.
